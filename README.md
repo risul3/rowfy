@@ -25,7 +25,7 @@ Dynamically add/remove table row using jquery
   
   >Script
   ```
-      $(document).on('click', '.rowfy-addrow', function(){
+    $(document).on('click', '.rowfy-addrow', function(){
       var rowfyable = $(this).closest('table');
       var lastRow = $('tbody tr:last', rowfyable).clone();
       $('input', lastRow).val('');
