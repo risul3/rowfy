@@ -21,6 +21,10 @@ $(document).on('click', '.rowfy-deleterow', function(){
 /*Initialize all rowfy tables*/
 $('.rowfy').each(function(){
   $('tbody', this).find('tr').each(function(){
-    $(this).append('<td><button class="btn btn-sm '+ ($(this).is(":last-child") ? 'rowfy-addrow btn-success">+' : 'rowfy-deleterow btn-danger">-') +'</button></td>');
+    $(this).append('<td><button class="btn btn-sm '
+      + ($(this).is(":last-child") ?
+        'rowfy-addrow btn-success">+' :
+        'rowfy-deleterow btn-danger">-') 
+      +'</button></td>');
   });
 });
