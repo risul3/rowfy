@@ -4,7 +4,8 @@ Dynamically add/remove table row using jquery
 ## Usage
 
 >Html
-In table there must be a `tbody` tag & table class must be `rowfy`.
+
+In table there must be a `tbody` tag & table must contain class `rowfy`.
 ```
   <table class="table table-striped table-hover rowfy">
     <thead>
